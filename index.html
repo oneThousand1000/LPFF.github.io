@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="A large-pose Flickr face dataset comprised of 19,590 high-quality real large-pose portrait images.">
+  <meta name="keywords" content="Face editing, Hair editing, StyleGAN">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LPFF: A Portrait Dataset for Face Generators Across Large Poses</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/1f638.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://onethousandwu.com/3DPortraitGAN.github.io/">
+                3DPortraitGAN
+            </a>
+          <a class="navbar-item" href="https://onethousandwu.com/HairMapper.github.io/">
+            HairMapper
+          </a>
+          <a class="navbar-item" href="https://onethousandwu.com/doublechinremoval.github.io/">
+            DoubleChin removal
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title"><span class="dnerf">LPFF</span>: <br />A Portrait Dataset  <br /> for Face Generators Across Large Poses</h1>
+           <div class="is-size-3 publication-conf">
+
+            <span><b>ICCV 2023</b></span>
+            </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://onethousandwu.com/">Yiqian Wu</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a>Jing Zhang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="http://sweb.cityu.edu.hk/hongbofu/publications.html">Hongbo Fu</a><sup>2</sup>,</span>
+             <span class="author-block">
+              <a href="http://www.cad.zju.edu.cn/home/jin/">Xiaogang Jin*</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>State Key Lab of CAD&CG, Zhejiang University,</span>
+            <span class="author-block"><sup>2</sup>City University of Hong Kong
+</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Wu_LPFF_A_Portrait_Dataset_for_Face_Generators_Across_Large_Poses_ICCV_2023_paper.html"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="http://www.cad.zju.edu.cn/home/jin/iccv2023/demo.mp4"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/oneThousand1000/LPFF-dataset"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code and Data</span>
+                  </a>
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <figure class="image">
+            <img src="./static/images/teaser.png" alt="teaser">
+          </figure>
+      <h2 class="subtitle has-text-centered">
+        Image and shape samples generated by EG3D models trained with the same training
+        strategy but using different datasets (our new dataset LPFF and FFHQ, and FFHQ alone).
+       The generators are conditioned by the average camera parameters.
+       Shapes are iso-surfaces extracted from the corresponding density fields using marching cubes.
+        Our dataset helps reduce distorted, ''seam'', ''wall-mounted'', and blurry artifacts exhibited in (b).
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+             Existing face generators exhibit exceptional performance on faces in small
+            to medium poses (with respect to frontal faces) but struggle to produce realistic
+            results for large poses. The distorted rendering results on large poses in 3D-aware
+            generators further show that the generated 3D face shapes are far from the
+            distribution of 3D faces in reality. We find that the above issues are caused by
+            the training dataset's pose imbalance.
+          </p>
+          <p>
+            To this end, we present <span class="dnerf">LPFF</span>, a large-pose Flickr face
+            dataset comprised of 19,590 high-quality real large-pose portrait images.
+            We utilize our dataset to train a 2D face generator that can process large-pose
+            face images, as well as a 3D-aware generator that can generate realistic human
+            face geometry. To better validate our pose-conditional 3D-aware generators,
+            we develop a new FID measure to evaluate the 3D-level performance.
+          </p>
+          <p>
+            Through this novel FID measure and other experiments, we show that <span class="dnerf">LPFF</span>
+            can help 2D face generators extend their latent space and better manipulate
+            the large-pose data, and help 3D-aware face generators achieve better view
+            consistency and more realistic 3D reconstruction results.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/faj0A9v2gxo?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+
+        <!-- Pipeline. -->
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Dataset samples</h2>
+        <div class="content has-text-justified">
+          <p>
+            The samples from our LPFF dataset.</p>
+          <figure class="image">
+            <img src="./static/images/dataset.png" alt="Pipeline">
+          </figure>
+        </div>
+      </div>
+
+
+
+    <!--/ Pipeline. -->
+
+
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@InProceedings{Wu_2023_ICCV,
+    author    = {Wu, Yiqian and Zhang, Jing and Fu, Hongbo and Jin, Xiaogang},
+    title     = {LPFF: A Portrait Dataset for Face Generators Across Large Poses},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+    pages     = {20327-20337}
+}
+    </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+           This page is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">source code</a>. We thank the author for sharing it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
